@@ -1,7 +1,8 @@
-import { Controller, Get, Post, Query } from "@nestjs/common";
+import { Body, Controller, Get, Post, Query } from "@nestjs/common";
 import { Request } from "express";
 
 import { ArcherService } from "src/services/archer.service";
+import { SendTagsDTO } from "src/DTOs/send-tags.dto";
 
 @Controller('archer')
 export class ArcherController {
@@ -15,7 +16,7 @@ export class ArcherController {
   }
 
   @Post('sendTags')
-  async sendTags() {
-    
+  async sendTags(@Body() sendTagsDTO: SendTagsDTO) {
+    const sendTags = await this.archerService.sendTags(sendTagsDTO);
   }
 }

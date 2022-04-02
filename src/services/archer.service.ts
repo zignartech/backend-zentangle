@@ -1,6 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import Moralis from "moralis/node";
 import axios from "axios";
+import { SendTagsDTO } from "src/DTOs/send-tags.dto";
 
 const INITIAL_BET: number = 1;
 
@@ -53,5 +54,10 @@ export class ArcherService {
     }
     console.log('There is a progress already created');
     return progress;
+  }
+
+  async sendTags(tagsData: SendTagsDTO) {
+    console.log(tagsData);
+    await axios.post('https://execute.zignar.io/sendTags', { ...tagsData });
   }
 }
