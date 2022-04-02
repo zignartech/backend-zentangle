@@ -10,7 +10,7 @@ export class ArcherService {
   constructor() { }
 
   private createProgress(userId: string, missionId: string): Object {
-    const Progress = Moralis.Object.extend('MissionProgress')
+    const Progress = Moralis.Object.extend('MissionProgress');
     const newProgress = new Progress();
     newProgress.save({
       mission: { __type: 'Pointer', className: 'Mission', objectId: missionId },

@@ -761,6 +761,11 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@israel-lpz/wasmclient@1.0.18":
+  version "1.0.18"
+  resolved "https://registry.yarnpkg.com/@israel-lpz/wasmclient/-/wasmclient-1.0.18.tgz#ca0d71ea14dfff81072479b2ddd7840d92ea72d8"
+  integrity sha512-PqY4SQed3EBQRFCPUXJmkBtQg/zMFcR51zkFkVjK81PVyUscqcLRKEOvM0bVWMNznK2hMULRI9Cnd/EMbY5dOg==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz"
@@ -1323,6 +1328,13 @@
   integrity sha512-X3HPWTwXRerBZS7Mo1k6vMVR1Z6zmJcDVn5O/31whe0tnjE4te6ZJSJGq1RiqHPjzPdMTfjCFogDJmwng9xHaQ==
   dependencies:
     "@types/superagent" "*"
+
+"@types/ws@8.5.3":
+  version "8.5.3"
+  resolved "https://registry.yarnpkg.com/@types/ws/-/ws-8.5.3.tgz#7d25a1ffbecd3c4f2d35068d0b283c037003274d"
+  integrity sha512-6YOoWjruKj1uLf3INHH7D3qTXwFfEsg1kf3c0uDdSBJwfa/llkwIjrAGV7j7mVgGNbzTQ3HiHKKDXl6bJPD97w==
+  dependencies:
+    "@types/node" "*"
 
 "@types/yargs-parser@*":
   version "21.0.0"
@@ -4143,6 +4155,11 @@ mute-stream@0.0.8:
   resolved "https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.8.tgz"
   integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
 
+nanoevents@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/nanoevents/-/nanoevents-6.0.2.tgz#3824031c7beab754b04ae5a17936c0fc7b6a183c"
+  integrity sha512-FRS2otuFcPPYDPYViNWQ42+1iZqbXydinkRHTHFxrF4a1CpBfmydR9zkI44WSXAXCyPrkcGtPk5CnpW6Y3lFKQ==
+
 natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
@@ -5495,15 +5512,15 @@ ws@7.4.6:
   resolved "https://registry.npmjs.org/ws/-/ws-7.4.6.tgz"
   integrity sha512-YmhHDO4MzaDLB+M9ym/mDA5z0naX8j7SIlT8f8z+I0VtzsRbekxEutHSme7NPS2qE8StCYQNUnfWdXta/Yu85A==
 
+ws@8.5.0, ws@^8.3.0:
+  version "8.5.0"
+  resolved "https://registry.npmjs.org/ws/-/ws-8.5.0.tgz"
+  integrity sha512-BWX0SWVgLPzYwF8lTzEy1egjhS4S4OEAHfsO8o65WOVsrnSRGaSiUaa9e0ggGlkMTtBlmOpEXiie9RUcBO86qg==
+
 ws@^7.4.6:
   version "7.5.7"
   resolved "https://registry.npmjs.org/ws/-/ws-7.5.7.tgz"
   integrity sha512-KMvVuFzpKBuiIXW3E4u3mySRO2/mCHSyZDJQM5NQ9Q9KHWHWh0NHgfbRMLLrceUK5qAL4ytALJbpRMjixFZh8A==
-
-ws@^8.3.0:
-  version "8.5.0"
-  resolved "https://registry.npmjs.org/ws/-/ws-8.5.0.tgz"
-  integrity sha512-BWX0SWVgLPzYwF8lTzEy1egjhS4S4OEAHfsO8o65WOVsrnSRGaSiUaa9e0ggGlkMTtBlmOpEXiie9RUcBO86qg==
 
 xml-name-validator@^3.0.0:
   version "3.0.0"
