@@ -6,7 +6,7 @@
 // Change the json schema instead
 
 import * as wasmclient from '@israel-lpz/wasmclient';
-import { createNanoEvents } from 'nanoevents';
+// import { createNanoEvents } from 'nanoevents';
 import * as app from './zentagle';
 
 export type IEventsSC = {
@@ -17,33 +17,33 @@ export type IEventsSC = {
   'zentangle.playRequested': (args: EventPlayRequested) => void;
 };
 
-export const EventsSC = createNanoEvents<IEventsSC>();
+// export const EventsSC = createNanoEvents<IEventsSC>();
 
 export const eventHandlers: wasmclient.EventHandlers = {
   'zentangle.gameEnded': (msg: string[]) => {
     const args = new EventGameEnded(msg);
     app.onZentangleGameEnded(args);
-    EventsSC.emit('zentangle.gameEnded', args);
+    // EventsSC.emit('zentangle.gameEnded', args);
   },
   'zentangle.gameStarted': (msg: string[]) => {
     const args = new EventGameStarted(msg);
     app.onZentangleGameStarted(args);
-    EventsSC.emit('zentangle.gameStarted', args);
+    // EventsSC.emit('zentangle.gameStarted', args);
   },
   'zentangle.imagetagged': (msg: string[]) => {
     const args = new EventImageTagged(msg);
     app.onZentangleImageTagged(args);
-    EventsSC.emit('zentangle.imageTagged', args);
+    // EventsSC.emit('zentangle.imageTagged', args);
   },
   'zentangle.paid': (msg: string[]) => {
     const args = new EventPaid(msg);
     app.onZentanglePaid(args);
-    EventsSC.emit('zentangle.paid', args);
+    // EventsSC.emit('zentangle.paid', args);
   },
   'zentangle.playRequested': (msg: string[]) => {
     const args = new EventPlayRequested(msg);
     app.onZentanglePlayRequested(args);
-    EventsSC.emit('zentangle.playRequested', args);
+    // EventsSC.emit('zentangle.playRequested', args);
   },
 };
 
